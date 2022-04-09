@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "5b0cdb81-a5fc-4bb2-97a8-cfa866ae59f4",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "imageUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profile_img",
+							"type": "file",
+							"src": "/C:/Users/ankur/OneDrive/Desktop/MyPhoto.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/imageUpload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"imageUpload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAlluser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profile_img",
+							"type": "file",
+							"src": "/C:/Users/ankur/OneDrive/Desktop/D.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/Api/user/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Api",
+						"user",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Api/user/62518bf8c3d0fc0e8cc49908/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Api",
+						"user",
+						"62518bf8c3d0fc0e8cc49908",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Ankur\",\r\n    \"email\" : \"ankur4@gmail.com\",\r\n    \"contactNo\" : 1234567890,\r\n    \"password\" : \"ankurpatel\",\r\n    \"image\" : \"profile.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Api/user/62518bf8c3d0fc0e8cc49908/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Api",
+						"user",
+						"62518bf8c3d0fc0e8cc49908",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
